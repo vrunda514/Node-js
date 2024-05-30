@@ -1,0 +1,175 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Modern an Admin Panel Category Flat Bootstarp Resposive Website Template | Forms :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!----webfonts--->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<!---//webfonts--->  
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+     <!-- Navigation -->
+        <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Modern</a>
+            </div>
+            <!-- /.navbar-header -->
+<%- include("./header.ejs") %>
+           
+			<form class="navbar-form navbar-right">
+              <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
+            </form>
+<%- include("./sidebar.ejs") %>
+           
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+        <div class="graphs">
+	     <div class="xs">
+  	       <h3 id="h3">Student Details</h3>
+  	         
+  <div class="panel-body">
+					<form role="form" class="form-horizontal" method="post" action="/insert" enctype="multipart/form-data">
+						<div class="form-group">
+							<label class="col-md-2 control-label">Student Image</label>
+							<div class="col-md-8">
+								<div class="input-group input-icon right">
+									<input name="img" class="form-control1" type="file">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">Student Id</label>
+							<div class="col-md-8">
+								<div class="input-group">								
+									<input type="text" class="form-control1" name="sid" placeholder="Enter Student Id">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">Entery Year</label>
+							<div class="col-md-8">
+								<div class="input-group">								
+									<input type="text" class="form-control1" name="year" placeholder="Enter Entery Year">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">Student Name</label>
+							<div class="col-md-8">
+								<div class="input-group">								
+									<input type="text" class="form-control1" name="name" placeholder="Enter Student Name">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">Birth Of Date</label>
+							<div class="col-md-8">
+								<div class="input-group">	
+									<input type="text" name="bod"  class="form-control1" id="exampleInputPassword1" placeholder="Enter Birth Date">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-2 control-label">Gender</label>
+							<div class="col-md-8">
+								<div class="input-group">	
+									<input type="radio" name="gender" value="Female" id="exampleInputPassword1" > Female
+									<input type="radio" name="gender" value="Male" id="exampleInputPassword1" > Male &nbsp;&nbsp;&nbsp;&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">Address</label>
+							<div class="col-md-8">
+								<div class="input-group">	
+									<input type="text" name="address"  class="form-control1" id="exampleInputPassword1" placeholder="Enter Address">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">Student E-mail</label>
+							<div class="col-md-8">
+								<div class="input-group input-icon right">
+									
+									<input id="" name="email"  class="form-control1" type="email" placeholder="Enter  E-mail">
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-md-2 control-label">Phone Number</label>
+							<div class="col-md-8">
+								<div class="input-group">	
+									<input type="text" name="number"  class="form-control1" id="exampleInputPassword1" placeholder="Enter Phone Number">
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="form-group">
+							<label class="col-md-2 control-label">School/Collage Name</label>
+							<div class="col-md-8">
+								<div class="input-group input-icon right">
+									
+									<input id="" name="school"  class="form-control1" type="text" placeholder="Enter School/Collage Name">
+								</div>
+							</div>
+						</div>
+
+						
+						
+						
+						
+      <div class="panel-footer">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<button class="btn-success btn">Submit</button>
+				<button class="btn-default btn">Cancel</button>
+			</div>
+		</div>
+	 </div>
+    				</form>
+  </div>
+  </div>
+<%- include("./footer.ejs") %>
+  
+  </div>
+      </div>
+      <!-- /#page-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+<!-- Nav CSS -->
+<link href="css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
+    }
+    table{
+        color: navy;
+        background-color: transparent;
+    }
+    form{
+        background-color: transparent;
+    }
+    form input,select{
+        background-color: transparent;
+        padding: 10px;
+        color: navy;
+        border: 0px solid black;
+    }
+    button{
+        /* margin: 9px; */
+        padding:10px 20px;
+        font-weight: bold;
+        font-size: 17px;
+        background-color: transparent;
+        color: navy;
+        border: 0px solid black;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="main">
+        <form action="/updatedata" method="post">
+            <table border="2" cellpadding="3" cellspacing="5" align="center">
+                <tr>
+                    <th>
+                        GR-NO
+                    </th>
+                    <td>
+                        <input type="text" name="no" value="<%=editdata.no%>">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <td>
+                        <input type="text" name="name" value="<%=editdata.name%>">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>
+                        Stream
+                    </th>
+                    <td>
+                        <!-- <input type="text" value="<%=editdata.field%>" name="field" id=""> -->
+                        <select name="filed" id="" value="<%=editdata.field%>">
+                            <option value="">Choose Strem</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BBA">BBA</option>
+                            <option value="B.COM">BCOM</option>
+                            <option value="BA">BA</option>
+                            <option value="BSC">BSC</option>
+                            <option value="BSC-IT">BSC.IT</option>
+                            <option value="B-TECH">B-TECH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Year
+                    </th>
+                    <td>
+                        <!-- <input type="text" value="<%=editdata.year%>" name="year" id=""> -->
+                        <select name="year" id="" value="<%=editdata.year%>">
+                            <option value="">Choose Year</option >
+                            <option value="First Year">First Year</option>
+                            <option value="Second Year">Second Year</option>
+                            <option value="Third Year">Third Year</option>
+                            <option value="Fourth Year">Fourth Year</option> 
+                        </select>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>
+                       City
+                    </th>
+                    <td>
+                        <input type="text" name="city" value="<%=editdata.city%>">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" colspan="2">
+                        <button type="submit"><a href="/view">UPDATE</a></button>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient(rgba(227, 224, 224, 0.5),rgba(227, 222, 222, 0.5)), url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid black; */
+}
+#sub{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 1px solid black;  */
+}
+#box1 ,#box2 , #box3 ,#box4{
+    height: auto;
+    padding: 20px;
+    flex-basis: 20%;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 30px;
+    background-color:rgba(250, 246, 246, 0.274);
+    /* box-shadow: 5px 5px 5px 5px gainsboro; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inbox{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#inbox .wp{
+    font-size: 45px;
+    color: rgb(86, 211, 86);
+    /* text-shadow: 1px 1px 1px rgb(11, 245, 11); */
+}
+#inbox .in{
+    font-size: 45px;
+    color:#FF004F;
+}
+#inbox .fb{
+    font-size: 45px;
+    color: rgb(70, 70, 245);
+    /* text-shadow: 3px 2px 3px rgb(42, 220, 42); */
+}
+#inbox .tr{
+    font-size: 45px;
+    color:rgb(4, 181, 251);
+    /* text-shadow: 3px 2px 3px rgb(42, 220, 42); */
+}
+#inbox h6{
+    font-size: 30px;
+    margin-top: 15px;
+}
+#inbox h5{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+}

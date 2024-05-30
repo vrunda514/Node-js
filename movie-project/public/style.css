@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    text-align: center;
+    background-color:black;
+    /* border: 1px solid black; */
+}
+ #hnm{
+    font-size: 35px;
+    color: white;
+}
+ #hnm::first-letter{
+    font-size: 50px;
+    color: red;
+}
+#hftr{
+    color: white;
+    margin-left: 40%;
+}
+#nav-a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+#simg{
+    width: 100%;
+    height: 500px;
+}
+
+#cards{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    /* border: 1px solid black; */
+}
+#sub-card{
+    flex-basis:25.5%;
+    height: 420px;
+    margin-top: 60px;
+    box-shadow: 3px 3px 5px 1px gray;
+    border: 0px solid black;
+}
+#sub-img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+#admin-form{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+#usersubcard{
+    margin-top: 50px;
+    flex-basis: 22%;
+}
+#user-img{
+    height: 310px;
+    border: 0px slid black;
+}
+
+
+
+#movie{
+    height: 130vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/alf.avif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid black; */
+}
+#m-inner{
+    height:110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#m-container{
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10%;
+    background-color: rgba(245, 245, 245, 0.518);
+}
+#m-container h4{
+    text-align: center;
+    font-size: 35px;
+}
+#m-container input{
+    margin: 9px;
+}
+#f input{
+    margin-bottom: 20px;
+    width: 95%;
+    /* border: 1px solid red; */
+}
+#s{
+    text-align: center;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+

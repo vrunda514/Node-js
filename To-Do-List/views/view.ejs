@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+</head>
+<style>
+   *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
+    body{
+        height: auto;
+            width: 100%;
+            background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
+    }
+    #main
+        {    
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            /* border: 1px solid white; */
+        }
+        #inner{
+            /* background-color: rgba(245, 245, 245, 0); */
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+            width: 70%;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            margin-bottom: 100px;
+            /* box-shadow: 1px 1px 10px 1px rgb(145, 144, 144); */
+            /* border-radius: 10px; */
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+       #t1{
+        height: auto;
+        width: auto;
+        text-align: center;
+       }
+       #t1 th{
+        padding: 10px;
+       }
+       #td{
+        padding: 10px;
+       }
+       button{
+        padding: 3px 10px;
+        background-color: transparent;
+        border: 0px solid black;
+       }
+       #btn1{
+        font-size: 18px;
+        color: red;
+       }
+       #btn2 {
+        font-size: 18px;
+        color:navy;
+       }
+</style>
+<body>
+
+<div id="d">
+    <div id="main">
+        <div id="inner">
+            
+            <h1 align="center">Student Data</h1>
+            
+            <table border="1" id="t1">
+                <tr>
+                    <th>GR-NO</th>
+                    <th>Name</th>
+                    <th>Stream</th>
+                    <th>Year</th>
+                    <th>City</th>
+                    <th>Action</th>
+                </tr>
+                <%detail.map((val)=>{%>
+                    <tr>
+                        <td id="td"><%=val.no%></td>
+                        <td id="td"><%=val.name%></td>
+                        <td id="td"><%=val.filed%></td>
+                        <td id="td"><%=val.year%></td>
+                        <td id="td"><%=val.city%></td>
+                        <td id="td">
+                            <button ><a  id="btn2" href="/editData?no=<%=val.no%>"">Edit</a></button>
+                            <button ><a id="btn1" href="/deleteData?no=<%=val.no%>">Delete</a></button>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="td" colspan="6"><a href="/">ADD DATA</a></td>
+                    </tr>
+                <%})%>
+        </table>        
+        </div>
+    </div>
+</div>
+</body>
+</html>

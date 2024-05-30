@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #d{
+            height: auto;
+            width: 100%;
+            background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
+        }
+        #main
+        {    
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            /* border: 1px solid white; */
+        }
+        #inner{
+            /* background-color: rgba(245, 245, 245, 0); */
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+            width: 70%;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            margin-bottom: 100px;
+            /* box-shadow: 1px 1px 10px 1px rgb(145, 144, 144); */
+            /* border-radius: 10px; */
+        }
+        h1{
+            padding: 18px;
+            font-family: cursive;
+            color: navy;
+            /* border: 1px solid black; */
+        }
+        input,select,#sb{
+            width: 400px;
+            padding: 10px;
+            background-color: rgba(84, 82, 82, 0.352);
+            margin: 9px;
+            border-radius: 9px;
+            border: 0px solid black;
+            color:white;
+        }
+        ::placeholder,option{
+            font-size: 15px;
+            color: rgb(246, 244, 236);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+       #t1{
+        height: auto;
+        width: auto;
+        text-align: center;
+       }
+       #t1 th{
+        padding: 10px;
+       }
+       #td{
+        padding: 10px;
+       }
+       button{
+        padding: 3px 10px;
+        background-color: transparent;
+        border: 0px solid black;
+       }
+       #btn1{
+        font-size: 18px;
+        color: red;
+       }
+       #btn2 {
+        font-size: 18px;
+        color:navy;
+       }
+    </style>
+</head>
+<body>
+
+    <div id="d">
+        <div id="main">
+            <div id="inner">
+                <h1 align="center">Student Information</h1>
+                <table>
+                    <form action="/insertData" method="post">
+                    <tr>
+                        <td><input type="number" value="" name="no" placeholder="Enter GR-NO" id=""></td>  
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Enter Name" name="name" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <input type="text" placeholder="Enter Stream" name="fild" id=""> -->
+                            <select name="filed" id="">
+                                <option value="">Choose Strem</option>
+                                <option value="BCA">BCA</option>
+                                <option value="BBA">BBA</option>
+                                <option value="B.COM">BCOM</option>
+                                <option value="BA">BA</option>
+                                <option value="BSC">BSC</option>
+                                <option value="BSC-IT">BSC.IT</option>
+                                <option value="B-TECH">B-TECH</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <input type="text" placeholder="Enter Stream" name="fild" id=""> -->
+                            <select name="year" id="">
+                                <option value="">Choose Year</option >
+                                <option value="First Year">First Year</option>
+                                <option value="Second Year">Second Year</option>
+                                <option value="Third Year">Third Year</option>
+                                <option value="Fourth Year">Fourth Year</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="city" placeholder="Enter City" id=""></td>  
+                    </tr>
+                    <tr>
+                       <td>
+                        <button id="sb"><a href="/view">ADD DATA</a></button>
+                       </td>
+                        
+                    </tr>
+                </form>
+                </table>
+
+                <br><br>
+
+               
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
